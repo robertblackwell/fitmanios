@@ -5,6 +5,7 @@
 //  Created by Robert BLACKWELL on 1/8/20.
 //  Copyright © 2020 Robert Blackwell. All rights reserved.
 //
+#if os(OSX)
 import IOKit.pwr_mgt
 
 var assertionID: IOPMAssertionID = 0
@@ -19,3 +20,4 @@ func  enableScreenSleep() {
     IOPMAssertionRelease(assertionID)
     sleepDisabled = false
 }
+#endif

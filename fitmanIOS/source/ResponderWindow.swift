@@ -5,7 +5,7 @@
 //  Created by Robert BLACKWELL on 1/9/20.
 //  Copyright © 2020 Robert Blackwell. All rights reserved.
 //
-
+#if os(OSX)
 import Cocoa
 
 // We subclass an NSView
@@ -45,3 +45,4 @@ class ResponderWindow: NSWindow {
         }
     }
 }
+#endif

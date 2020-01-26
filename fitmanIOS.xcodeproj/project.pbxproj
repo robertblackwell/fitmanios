@@ -13,15 +13,17 @@
 		0E2FF33523CA76F2009EE20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E2FF33423CA76F2009EE20B /* Assets.xcassets */; };
 		0E2FF33823CA76F2009EE20B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E2FF33723CA76F2009EE20B /* Preview Assets.xcassets */; };
 		0E2FF33B23CA76F2009EE20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E2FF33923CA76F2009EE20B /* LaunchScreen.storyboard */; };
-		0E2FF34623CA77E9009EE20B /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2FF34223CA77E9009EE20B /* Exercise.swift */; };
-		0E2FF34723CA77E9009EE20B /* ExerciseLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2FF34323CA77E9009EE20B /* ExerciseLoader.swift */; };
-		0E2FF34823CA77E9009EE20B /* ExercisePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2FF34423CA77E9009EE20B /* ExercisePlayer.swift */; };
-		0E2FF34923CA77E9009EE20B /* ExerciseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2FF34523CA77E9009EE20B /* ExerciseController.swift */; };
-		0E2FF34C23CA782F009EE20B /* SessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2FF34A23CA782F009EE20B /* SessionViewModel.swift */; };
-		0E2FF34D23CA782F009EE20B /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2FF34B23CA782F009EE20B /* Speaker.swift */; };
-		0E2FF34F23CA7871009EE20B /* ExerciseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2FF34E23CA7871009EE20B /* ExerciseError.swift */; };
-		0E2FF35123CA79F1009EE20B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2FF35023CA79F1009EE20B /* ContentView.swift */; };
 		0E2FF35323CA7C0F009EE20B /* exercise.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E2FF35223CA7C0F009EE20B /* exercise.json */; };
+		0E514A7423DE2E2E0010AFE0 /* ExerciseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E514A6A23DE2E2E0010AFE0 /* ExerciseError.swift */; };
+		0E514A7523DE2E2E0010AFE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E514A6B23DE2E2E0010AFE0 /* ContentView.swift */; };
+		0E514A7623DE2E2E0010AFE0 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E514A6C23DE2E2E0010AFE0 /* Exercise.swift */; };
+		0E514A7723DE2E2E0010AFE0 /* ExercisePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E514A6D23DE2E2E0010AFE0 /* ExercisePlayer.swift */; };
+		0E514A7823DE2E2E0010AFE0 /* ResponderWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E514A6E23DE2E2E0010AFE0 /* ResponderWindow.swift */; };
+		0E514A7923DE2E2E0010AFE0 /* SessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E514A6F23DE2E2E0010AFE0 /* SessionViewModel.swift */; };
+		0E514A7A23DE2E2E0010AFE0 /* Sleeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E514A7023DE2E2E0010AFE0 /* Sleeper.swift */; };
+		0E514A7B23DE2E2E0010AFE0 /* ExerciseLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E514A7123DE2E2E0010AFE0 /* ExerciseLoader.swift */; };
+		0E514A7C23DE2E2E0010AFE0 /* ExerciseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E514A7223DE2E2E0010AFE0 /* ExerciseController.swift */; };
+		0E514A7D23DE2E2E0010AFE0 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E514A7323DE2E2E0010AFE0 /* Speaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,15 +35,17 @@
 		0E2FF33723CA76F2009EE20B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0E2FF33A23CA76F2009EE20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E2FF33C23CA76F2009EE20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E2FF34223CA77E9009EE20B /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Exercise.swift; path = fitman/Exercise.swift; sourceTree = SOURCE_ROOT; };
-		0E2FF34323CA77E9009EE20B /* ExerciseLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExerciseLoader.swift; path = fitman/ExerciseLoader.swift; sourceTree = SOURCE_ROOT; };
-		0E2FF34423CA77E9009EE20B /* ExercisePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExercisePlayer.swift; path = fitman/ExercisePlayer.swift; sourceTree = SOURCE_ROOT; };
-		0E2FF34523CA77E9009EE20B /* ExerciseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExerciseController.swift; path = fitman/ExerciseController.swift; sourceTree = SOURCE_ROOT; };
-		0E2FF34A23CA782F009EE20B /* SessionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionViewModel.swift; path = fitman/SessionViewModel.swift; sourceTree = SOURCE_ROOT; };
-		0E2FF34B23CA782F009EE20B /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Speaker.swift; path = fitman/Speaker.swift; sourceTree = SOURCE_ROOT; };
-		0E2FF34E23CA7871009EE20B /* ExerciseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExerciseError.swift; path = fitman/ExerciseError.swift; sourceTree = SOURCE_ROOT; };
-		0E2FF35023CA79F1009EE20B /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = fitman/ContentView.swift; sourceTree = SOURCE_ROOT; };
 		0E2FF35223CA7C0F009EE20B /* exercise.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exercise.json; sourceTree = "<group>"; };
+		0E514A6A23DE2E2E0010AFE0 /* ExerciseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExerciseError.swift; path = source/ExerciseError.swift; sourceTree = "<group>"; };
+		0E514A6B23DE2E2E0010AFE0 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = source/ContentView.swift; sourceTree = "<group>"; };
+		0E514A6C23DE2E2E0010AFE0 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Exercise.swift; path = source/Exercise.swift; sourceTree = "<group>"; };
+		0E514A6D23DE2E2E0010AFE0 /* ExercisePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExercisePlayer.swift; path = source/ExercisePlayer.swift; sourceTree = "<group>"; };
+		0E514A6E23DE2E2E0010AFE0 /* ResponderWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponderWindow.swift; path = source/ResponderWindow.swift; sourceTree = "<group>"; };
+		0E514A6F23DE2E2E0010AFE0 /* SessionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionViewModel.swift; path = source/SessionViewModel.swift; sourceTree = "<group>"; };
+		0E514A7023DE2E2E0010AFE0 /* Sleeper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sleeper.swift; path = source/Sleeper.swift; sourceTree = "<group>"; };
+		0E514A7123DE2E2E0010AFE0 /* ExerciseLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExerciseLoader.swift; path = source/ExerciseLoader.swift; sourceTree = "<group>"; };
+		0E514A7223DE2E2E0010AFE0 /* ExerciseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExerciseController.swift; path = source/ExerciseController.swift; sourceTree = "<group>"; };
+		0E514A7323DE2E2E0010AFE0 /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Speaker.swift; path = source/Speaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,18 +78,11 @@
 		0E2FF32D23CA76F1009EE20B /* fitmanIOS */ = {
 			isa = PBXGroup;
 			children = (
+				0E514A6923DE2E140010AFE0 /* Source */,
 				0E2FF35223CA7C0F009EE20B /* exercise.json */,
 				0E2FF32E23CA76F1009EE20B /* AppDelegate.swift */,
 				0E2FF33023CA76F1009EE20B /* SceneDelegate.swift */,
-				0E2FF34E23CA7871009EE20B /* ExerciseError.swift */,
-				0E2FF34A23CA782F009EE20B /* SessionViewModel.swift */,
-				0E2FF34B23CA782F009EE20B /* Speaker.swift */,
-				0E2FF34223CA77E9009EE20B /* Exercise.swift */,
-				0E2FF34523CA77E9009EE20B /* ExerciseController.swift */,
-				0E2FF34323CA77E9009EE20B /* ExerciseLoader.swift */,
-				0E2FF34423CA77E9009EE20B /* ExercisePlayer.swift */,
 				0E2FF33223CA76F1009EE20B /* XContentView.swift */,
-				0E2FF35023CA79F1009EE20B /* ContentView.swift */,
 				0E2FF33423CA76F2009EE20B /* Assets.xcassets */,
 				0E2FF33923CA76F2009EE20B /* LaunchScreen.storyboard */,
 				0E2FF33C23CA76F2009EE20B /* Info.plist */,
@@ -100,6 +97,23 @@
 				0E2FF33723CA76F2009EE20B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0E514A6923DE2E140010AFE0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0E514A6B23DE2E2E0010AFE0 /* ContentView.swift */,
+				0E514A6C23DE2E2E0010AFE0 /* Exercise.swift */,
+				0E514A7223DE2E2E0010AFE0 /* ExerciseController.swift */,
+				0E514A6A23DE2E2E0010AFE0 /* ExerciseError.swift */,
+				0E514A7123DE2E2E0010AFE0 /* ExerciseLoader.swift */,
+				0E514A6D23DE2E2E0010AFE0 /* ExercisePlayer.swift */,
+				0E514A6E23DE2E2E0010AFE0 /* ResponderWindow.swift */,
+				0E514A6F23DE2E2E0010AFE0 /* SessionViewModel.swift */,
+				0E514A7023DE2E2E0010AFE0 /* Sleeper.swift */,
+				0E514A7323DE2E2E0010AFE0 /* Speaker.swift */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,17 +188,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E2FF34723CA77E9009EE20B /* ExerciseLoader.swift in Sources */,
-				0E2FF35123CA79F1009EE20B /* ContentView.swift in Sources */,
-				0E2FF34C23CA782F009EE20B /* SessionViewModel.swift in Sources */,
+				0E514A7423DE2E2E0010AFE0 /* ExerciseError.swift in Sources */,
+				0E514A7B23DE2E2E0010AFE0 /* ExerciseLoader.swift in Sources */,
+				0E514A7923DE2E2E0010AFE0 /* SessionViewModel.swift in Sources */,
+				0E514A7D23DE2E2E0010AFE0 /* Speaker.swift in Sources */,
+				0E514A7523DE2E2E0010AFE0 /* ContentView.swift in Sources */,
+				0E514A7823DE2E2E0010AFE0 /* ResponderWindow.swift in Sources */,
 				0E2FF32F23CA76F1009EE20B /* AppDelegate.swift in Sources */,
-				0E2FF34623CA77E9009EE20B /* Exercise.swift in Sources */,
 				0E2FF33123CA76F1009EE20B /* SceneDelegate.swift in Sources */,
-				0E2FF34823CA77E9009EE20B /* ExercisePlayer.swift in Sources */,
-				0E2FF34D23CA782F009EE20B /* Speaker.swift in Sources */,
-				0E2FF34923CA77E9009EE20B /* ExerciseController.swift in Sources */,
-				0E2FF34F23CA7871009EE20B /* ExerciseError.swift in Sources */,
+				0E514A7C23DE2E2E0010AFE0 /* ExerciseController.swift in Sources */,
+				0E514A7A23DE2E2E0010AFE0 /* Sleeper.swift in Sources */,
+				0E514A7723DE2E2E0010AFE0 /* ExercisePlayer.swift in Sources */,
 				0E2FF33323CA76F1009EE20B /* XContentView.swift in Sources */,
+				0E514A7623DE2E2E0010AFE0 /* Exercise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
