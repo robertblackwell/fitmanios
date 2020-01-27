@@ -5,61 +5,84 @@
 //  Created by Robert BLACKWELL on 1/8/20.
 //  Copyright © 2020 Robert Blackwell. All rights reserved.
 //
-import UIKit
+//import Cocoa
 import SwiftUI
 import Foundation
 import AVFoundation
 
 
 class Speaker: NSObject, AVSpeechSynthesizerDelegate {
-    var avSpeechSynthesizer: AVSpeechSynthesizer
+    var avSpeechSynthesizer: AVSpeechSynthesizer?
     override init() {
         self.avSpeechSynthesizer = AVSpeechSynthesizer()
         super.init()
-//        let speechVoices = AVSpeechSynthesisVoice.speechVoices()
-//        speechVoices.forEach { (voice) in
-//          print("**********************************")
-//          print("Voice identifier: \(voice.identifier)")
-//          print("Voice language: \(voice.language)")
-//          print("Voice name: \(voice.name)")
-//          print("Voice quality: \(voice.quality.rawValue)") // Compact: 1 ; Enhanced: 2
-//        }
+        #if LIST_VOICES
+        let speechVoices = AVSpeechSynthesisVoice.speechVoices()
+        speechVoices.forEach { (voice) in
+          print("**********************************")
+          print("Voice identifier: \(voice.identifier)")
+          print("Voice language: \(voice.language)")
+          print("Voice name: \(voice.name)")
+          print("Voice quality: \(voice.quality.rawValue)") // Compact: 1 ; Enhanced: 2
+        }
+        #endif
     }
     func announce(_ exercise: Exercise) {
         self.avSpeechSynthesizer = AVSpeechSynthesizer()
-        self.avSpeechSynthesizer.delegate = self
-        let utterance = AVSpeechUtterance(string: exercise.label + " for \(exercise.duration) seconds")
-        utterance.rate = 0.4
-        utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
-        utterance.voice = AVSpeechSynthesisVoice(identifier: "com.apple.speech.synthesis.voice.daniel.premium")
-//        utterance.voice = AVSpeechSynthesisVoice(identifier: "com.apple.speech.synthesis.voice.Zarvox")
-        self.avSpeechSynthesizer.speak(utterance)
+        self.avSpeechSynthesizer!.delegate = self
+        self.say(exercise.label + " for \(exercise.duration) seconds")
     }
     func say(_ text: String) {
         self.avSpeechSynthesizer = AVSpeechSynthesizer()
-        self.avSpeechSynthesizer.delegate = self
+        self.avSpeechSynthesizer!.delegate = self
         let utterance = AVSpeechUtterance(string: text)
-        utterance.rate = 0.4
+        utterance.rate = 0.5
+        #if os(OSX)
         utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
         utterance.voice = AVSpeechSynthesisVoice(identifier: "com.apple.speech.synthesis.voice.daniel.premium")
-        self.avSpeechSynthesizer.speak(utterance)
+        #else
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-AU")
+        utterance.voice = AVSpeechSynthesisVoice(identifier: "com.apple.ttsbundle.Karen-compact")
+        #endif
+        DispatchQueue.global(qos: .background).async {
+            self.avSpeechSynthesizer!.speak(utterance)
+        }
     }
-
+    func playSound(sound: String) {
+        DispatchQueue.global(qos: .background).async {
+            #if USE_NSSOUND
+                NSSound(named: sound)!.play()
+            #else
+                SoundPlayer.shared().play(name: "\(sound).aiff")
+            #endif
+        }
+    }
     func playTinkSound() {
-        self.say("Tick")
-//        NSSound(named: "Tink")?.play()
+        playSound(sound: "Tink")
     }
     func playPurrSound() {
-        self.say("Purr")
-//        NSSound(named: "Purr")?.play()
+        playSound(sound: "Purr")
     }
     func playPopSound() {
-        self.say("Pop")
-//        NSSound(named: "Pop")?.play()
+        playSound(sound: "Pop")
     }
-
+    func stopSpeech() {
+        if (self.avSpeechSynthesizer != nil) {
+            self.avSpeechSynthesizer!.stopSpeaking(at: AVSpeechBoundary.immediate)
+        }
+    }
+    func pauseSpeech() {
+        if (self.avSpeechSynthesizer != nil) {
+            self.avSpeechSynthesizer!.pauseSpeaking(at: AVSpeechBoundary.immediate)
+        }
+    }
+    func resumeSpeech() {
+        if (self.avSpeechSynthesizer != nil) {
+            self.avSpeechSynthesizer!.continueSpeaking()
+        }
+    }
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
-        print("didFinish")
+        Trace.writeln("didFinish")
     }
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didStart utterance: AVSpeechUtterance) {
     }

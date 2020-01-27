@@ -8,14 +8,29 @@
         { "label": "Wall stand", "duration": 20 }
     ],
     "test3" :[
-        { "label": "T2 Door stretch", "duration": 30 },
+        { "label": "T3 Door stretch", "duration": 30 },
         { "label": "Wall stand", "duration": 20 }
     ],
-    "test4" :[
-        { "label": "T2 Door stretch", "duration": 30 },
-        { "label": "Wall stand", "duration": 20 }
+    "Nina's Exercises" :[
+        { "label": "Balance on ball, first time ", "duration": 60 },
+        { "label": "Balance on ball, second time ", "duration": 60 },
+        { "label": "Balance on ball, final time ", "duration": 60 },
+        { "label": "Wall stand, first", "duration": 30 },
+        { "label": "Wall stand, second", "duration": 30 },
+        { "label": "Wall stand, third", "duration": 30 },
+        { "label": "Wall stand, fourth", "duration": 30 },
+        { "label": "Wall stand, final", "duration": 30 },
+        { "label": "Back stretch, first time", "duration": 30 },
+        { "label": "Back stretch, second time", "duration": 30 },
+        { "label": "Back stretch, third time", "duration": 30 },
+        { "label": "Back stretch, fourth time", "duration": 30 },
+        { "label": "Back stretch, final time", "duration": 30 },
+        { "label": "Walk out to the garage for next exercises", "duration": 120 },
+        { "label": "Row exercise, first time", "duration": 30 },
+        { "label": "Row exercise, second time", "duration": 30 },
+        { "label": "Row exercise, final time", "duration": 30 }
     ],
-    "rob" : [
+    "Robert's Exercises" : [
         { "label": "Door stretch", "duration": 60 },
         { "label": "Wall stand", "duration": 60 },
         { "label": "Door stretch", "duration": 60 },

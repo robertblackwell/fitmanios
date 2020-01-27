@@ -26,8 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        let contentView = ContentView()
         let contentView = ContentView(
             controller: self.exerciseController!,
-            sessionLabels: labels,
-            state: self.exerciseController!.model
+            sessionLabels: labels
             )
 
         // Use a UIHostingController as window root view controller.

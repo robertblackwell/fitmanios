@@ -19,7 +19,7 @@ class ResponderWindow: NSWindow {
 
     // Override the NSView keydown func to read keycode of pressed key
     override func keyDown(with theEvent: NSEvent) {
-        Swift.print(theEvent.keyCode)
+        Trace.writeln("keycode: \(theEvent.keyCode)")
         
         switch theEvent.keyCode {
             case 49: //space
@@ -27,19 +27,22 @@ class ResponderWindow: NSWindow {
                 if let m = self.model {
                     m.togglePause()
                 }
-                return print("key space")
+                Trace.writeln("key space")
+                return
             case 123: //left
                 // TODO
                 if let m = self.model {
-                    m.previous()
+                    m.previousButton()
                 }
-                return print("key left")
+                Trace.writeln("key left")
+                return
             case 124: //right
                 // TODO
                 if let m = self.model {
-                    m.next()
+                    m.nextButton()
                 }
-                return print("key right")
+                Trace.writeln("key right")
+                return
             default:
                 return
         }

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fitmanIOS.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>6EE592456CC269E35F829F978D725E7853AA9D4D</string>
+				<key>dateExpires</key>
+				<string>1/25/21</string>
+				<key>type</key>
+				<string>Apple Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>53V9JBRS5T.me.fitmanIOS</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>53V9JBRS5T</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>53V9JBRS5T.me.fitmanIOS</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>fitmanIOS.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>742da8b9-9d6e-478a-a15b-36d2bed18ade</string>
+				<key>name</key>
+				<string>iOS Team Ad Hoc Provisioning Profile: *</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>53V9JBRS5T</string>
+				<key>name</key>
+				<string>Robert Blackwell</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

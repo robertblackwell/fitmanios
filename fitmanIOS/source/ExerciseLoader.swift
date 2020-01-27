@@ -8,7 +8,6 @@
 // Functions for loading a simple database of exercise sessions
 //
 //
-import UIKit
 import SwiftUI
 import Foundation
 import AVFoundation
@@ -22,7 +21,6 @@ func loadExerciseFile() -> ExerciseSessionDatabase {
     if let filepath = Bundle.main.path(forResource: "exercise", ofType: "json") {
         do {
             let contents = try String(contentsOfFile: filepath)
-//            print(contents)
             let data = Data(contents.utf8)
             let decoder = JSONDecoder()
             do {
